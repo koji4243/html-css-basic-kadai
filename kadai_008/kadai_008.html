@@ -28,24 +28,45 @@
         <section>
         <h3>私のおすすめ和菓子アンケートフォーム</h3>
             <form>
-                <p>氏名<input type="text" placeholder="名前を入力してください"></p>
-                <p>年代<select name="exam" >
-                        <option value="10代以下">10代以下</option>
-                        <option value="20代以下">20代以下</option>
-                        <option value="30代以下">30代以下</option>
-                        <option value="40代以下">40代以下</option>
-                    </select>
+                <p>
+                    <label for="name">氏名</label>
+                    <input type="text" placeholder="名前を入力してください" id="name">
                 </p>
                 <p>
-                    <input type="radio" name="q1" value="男性"> 男性
-                    <input type="radio" name="q1" value="女性">女性
-                    <input type="radio" name="q1" value="その他">その他
+                    <label for="age">年代</label>
+                    <select name="exam" id="age" >
+                        <option value="10代以下">10代以下</option>
+                        <option value="20代">20代</option>
+                        <option value="30代">30代</option>
+                        <option value="40代以上">40代以上</option>
+                    </select>
                 </p>
-                <p>おすすめ和菓子の名称<input type="text" placeholder="例：みたらし団子"></p>
-                <p>おすすめする理由<textarea name="exam3" rows="4" cols="24"></textarea></p>
-                <p>個人情報保護方針に同意する<input type="checkbox" name="q1" value=""> </p>
+                <span>
+                    <label for="man">男性</label>
+                    <input type="radio" name="q1" value="男性" id="man"> 
+                </span>
+                <span>
+                    <label for="woman">女性</label>
+                    <input type="radio" name="q1" value="女性" id="woman"> 
+                </span>
+                <span>
+                    <label for="sonota">その他</label>
+                    <input type="radio" name="q1" value="その他" id="sonota"> 
+                </span>
+                <p>
+                    <label for="like">おすすめ和菓子の名称</label>
+                    <input type="text" placeholder="例：みたらし団子" id="like">
+                </p>
+                <p>
+                    <label for="likes">おすすめする理由</label>
+                    <textarea name="exam3" rows="4" cols="24" id="likes"></textarea>
+                </p>
+                <p>
+                    <label for="pol">個人情報保護方針に同意する</label>
+                    <input type="checkbox" name="q1" id="pol">
+                </p>
                 <input type="submit" value="送信" />
-                <input type="submit" value="リセット" />
+                <input type="reset" value="リセット" />
             </form>
         </section>
     </article>
