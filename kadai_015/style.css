@@ -4,16 +4,15 @@
 body {
     font-family: "Arial", "Meiryo", sans-serif;
     text-align: center;
+}
+html {
     font-size: 20px;
 }
-
-h1 > .blue {
+.blue {
     color: skyblue;
-    font-size: 2rem;
 }
-h1 > .pink {
+.pink {
     color: rgb(255, 192, 203);
-    font-size: 2rem;
 }
 #basic > .pink,
 h2.pink {
